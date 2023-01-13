@@ -7,29 +7,48 @@
       <a class="text-3xl font-mono" href="">cartrader</a>
     </header>
     <!-- Navbar -->
-    <!-- Home Hero -->
+
+    <!-- Cars Page -->
     <div
-      class="relative h-screen w-100 bg-no-repeat bg-cover bg-bottom bg-[url(https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/1-mini-electric-2020-uk-fd-hero-front.jpg?itok=OFilSlQ3)]"
+      class="mx-auto mt-4 max-w-7xl space-y-4 px-4 xs:px-8 sm:px-10 lg:px-16 pb-16 w-3/5"
     >
-      <div class="z-10 absolute w-full h-full flex justify-center items-center">
-        <div class="text-center w-1/2">
-          <h1 class="text-8xl font-serif mb-10 text-white">Find your drive</h1>
-          <!-- Home Search Bar -->
+      <div class="mt-32 flex">
+        <!-- Car Side Bar -->
+        <div class="shadow border w-64 mr-10 z-30 h-[190px]">
           <div
-            class="font-serif w-[1000px] text-2xl rounded-full bg-white flex justify-between overflow-hidden drop-shadow-2xl mx-auto"
+            class="p-5 flex justify-between relative cursor-pointer border-b"
           >
-            <input
-              type="text"
-              class="py-3 px-5 w-full text-2xl rounded-full focus:outline-none"
-              placeholder="Search by City..."
-            />
-            <button class="bg-sky-500 px-10 text-white">Search</button>
+            <h3>Location</h3>
+            <h3 class="text-blue-500 capitalize">Sleman</h3>
+            <!-- <div class="absolute border shadow left-56 p-5 top-1 -m-1 bg-white">
+              <input type="text" class="border p-1 rounded" />
+              <button class="bg-blue-400 w-full mt-2 rounded text-white p-1">
+                Apply
+              </button>
+            </div> -->
           </div>
-          <!-- Home Search Bar -->
+
+          <div
+            class="p-5 flex justify-between relative cursor-pointer border-b"
+          >
+            <h3>Make</h3>
+            <h3 class="text-blue-500 capitalize">Honda</h3>
+          </div>
+
+          <div
+            class="p-5 flex justify-between relative cursor-pointer border-b"
+          >
+            <h3>Price</h3>
+            <h3 class="text-blue-500 capitalize">Any</h3>
+          </div>
         </div>
+        <!-- Car Side Bar -->
+
+        <!-- Card Cards -->
+
+        <!-- Card Cards -->
       </div>
-      <div class="z-1 absolute w-full h-full bg-black opacity-50"></div>
     </div>
-    <!-- Home Hero -->
+    <!-- Cars Page -->
   </div>
 </template>
