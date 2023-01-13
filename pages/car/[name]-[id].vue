@@ -1,5 +1,6 @@
 <script setup>
 const route = useRoute();
+const { cars } = useCars();
 const { toTitleCase } = useUtilities();
 
 useHead({
@@ -8,12 +9,17 @@ useHead({
 definePageMeta({
   layout: "custom",
 });
+const car = computed(() => {
+  return cars.find((obj) => {
+    return obj.id === parseInt(route.params.id);
+  });
+});
 </script>
 <template>
-  <div>
-    <CarDetailHero />
-    <CarDetailAttributes />
-    <CarDetailDescription />
+  <div v-if="car">
+    <CarDetailHero :car="car" />
+    <CarDetailAttributes :features="car?.features" />
+    <CarDetailDescription :description="car?.description" />
     <CarDetailContact />
   </div>
 </template>
